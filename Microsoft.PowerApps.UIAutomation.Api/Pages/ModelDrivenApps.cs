@@ -28,6 +28,19 @@ namespace Microsoft.PowerApps.UIAutomation.Api
         {
         }
 
+        public BrowserCommandResult<bool> CancelSolutionChecker(int thinkTime = Constants.DefaultThinkTime)
+        {
+            Browser.ThinkTime(thinkTime);
+
+            return this.Execute(GetOptions("Cancel Solution Checker Run"), driver =>
+            {
+
+                driver.WaitUntilVisible(By.XPath(Elements.Xpath[Reference.CommandBar.SolutionCheckerStatusButton]));
+
+                return true;
+            });
+        }
+
         public BrowserCommandResult<string> CheckForErrors(int thinkTime = Constants.DefaultThinkTime)
         {
             Browser.ThinkTime(thinkTime);

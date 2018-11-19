@@ -75,6 +75,8 @@ namespace Microsoft.PowerApps.UIAutomation.Api
             { "CommandBar_ContextualMenuList", "//ul[contains(@class,'ms-ContextualMenu-list')]" },
             { "CommandBar_GridSolutionNameColumn", "//div[@data-automation-key='name']"},
             { "CommandBar_GridSolutionStatusColumn", "//div[contains(@data-automation-key,'solutionChecker')]"},
+            { "CommandBar_SolutionCheckerStatusButton", "//button[contains(@name,'Solution checker running')]"},
+
 
 
             //ModelDrivenApps
@@ -182,6 +184,7 @@ namespace Microsoft.PowerApps.UIAutomation.Api
             public static string ContextualMenuList = "CommandBar_ContextualMenuList";
             public static string GridSolutionNameColumn = "CommandBar_GridSolutionNameColumn";
             public static string GridSolutionStatusColumn = "CommandBar_GridSolutionStatusColumn";
+            public static string SolutionCheckerStatusButton = "CommandBar_SolutionCheckerStatusButton";
         }
 
         public static class ModelDrivenApps

@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelDriven\CancelSolutionChecker.cs" />
     <Compile Include="ModelDriven\VerifySolutionChecker.cs" />
     <Compile Include="ModelDriven\RunSolutionChecker.cs" />
     <Compile Include="ModelDriven\OpenSolutionCheckerUI.cs" />
